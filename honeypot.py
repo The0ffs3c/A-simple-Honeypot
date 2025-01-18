@@ -10,7 +10,7 @@ logging.basicConfig(filename='honeypot_log.txt', level=logging.INFO, format='%(a
 
 # Simulated services
 class HoneypotServices:
-    def __init__(self, host='192.168.0.110', port=8080):
+    def __init__(self, host='ip address', port=8080):
         self.host = host
         self.port = port
         self.server_socket = None
@@ -142,7 +142,7 @@ class HoneypotIDS:
 
 # Main honeypot setup
 if __name__ == "__main__":
-    honeypot = HoneypotServices(host='192.168.0.110', port=8080)
+    honeypot = HoneypotServices(host='ip address', port=8080)
     ids = HoneypotIDS()
 
     try:
